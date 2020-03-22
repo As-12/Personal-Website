@@ -1,0 +1,15 @@
+.tablet-up {
+  display: none;
+
+  @include mq('tablet-small') {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+
+  @include mq('tablet-small') {
+    display: none;
+  }
+}

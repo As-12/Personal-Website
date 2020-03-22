@@ -1,0 +1,5 @@
+.title-container {
+  width: 80%;
+  max-width: $max-page-width;
+  @include push--auto;
+}

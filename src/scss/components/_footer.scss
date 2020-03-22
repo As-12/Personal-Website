@@ -1,0 +1,20 @@
+nav {
+  padding-top: 1rem;
+}
+nav a,
+nav a nav a:link,
+nav a:visited,
+nav a:active,
+nav {
+  text-decoration: none;
+  color: map-get($nav-style, 'font-color');
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: lighten(map-get($nav-style, 'font-color'), 25%);
+}
+
+footer p {
+  @include font-size(0.8);
+}

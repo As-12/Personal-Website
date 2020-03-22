@@ -1,0 +1,972 @@
+/* ============================================= */
+/* Sub-Folder Imports                            */
+/* ============================================= */
+/* ============================================= */
+/* Component Imports                             */
+/* ============================================= */
+/* Configuration Variables */
+/* ============================================= */
+/* Base Imports                                  */
+/* ============================================= */
+/* Document
+ * ========================================================================== */
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+/* line 8, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+   * 1. Add text decoration inheritance in all browsers (opinionated).
+   * 2. Add vertical alignment inheritance in all browsers (opinionated).
+   */
+/* line 19, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+   * 1. Use the default cursor in all browsers (opinionated).
+   * 2. Change the line height in all browsers (opinionated).
+   * 3. Use a 4-space tab width in all browsers (opinionated).
+   * 4. Remove the grey highlight on links in iOS (opinionated).
+   * 5. Prevent adjustments of font size after orientation changes in
+   *    IE on Windows Phone and in iOS.
+   * 6. Breaks words to prevent overflow in all browsers (opinionated).
+   */
+/* line 35, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+html {
+  cursor: default;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+  word-break: break-word;
+  /* 6 */
+}
+
+/* Sections
+   * ========================================================================== */
+/**
+   * Remove the margin in all browsers (opinionated).
+   */
+/* line 53, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Edge, Firefox, and Safari.
+   */
+/* line 62, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   * ========================================================================== */
+/**
+   * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+   */
+/* line 74, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0;
+}
+
+/**
+   * Remove the margin on nested lists in Edge 18- and IE.
+   */
+/* line 86, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+/**
+   * 1. Add the correct sizing in Firefox.
+   * 2. Show the overflow in Edge 18- and IE.
+   */
+/* line 98, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+hr {
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * Add the correct display in IE.
+   */
+/* line 107, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+main {
+  display: block;
+}
+
+/**
+   * Remove the list style on navigation lists in all browsers (opinionated).
+   */
+/* line 115, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+nav ol,
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 126, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   * ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 138, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * Add the correct text decoration in Edge 18-, IE, and Safari.
+   */
+/* line 146, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 155, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 165, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 176, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+small {
+  font-size: 80%;
+}
+
+/* Embedded content
+   * ========================================================================== */
+/*
+   * Change the alignment on media elements in all browsers (opinionated).
+   */
+/* line 187, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+   * Add the correct display in IE 9-.
+   */
+/* line 200, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+   * Add the correct display in iOS 4-7.
+   */
+/* line 209, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+   * Remove the border on iframes in all browsers (opinionated).
+   */
+/* line 218, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+iframe {
+  border-style: none;
+}
+
+/**
+   * Remove the border on images within links in IE 10-.
+   */
+/* line 226, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+img {
+  border-style: none;
+}
+
+/**
+   * Change the fill color to match the text color in all browsers (opinionated).
+   */
+/* line 234, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/**
+   * Hide the overflow in IE.
+   */
+/* line 242, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+   * ========================================================================== */
+/**
+   * Collapse border spacing in all browsers (opinionated).
+   */
+/* line 253, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+   * ========================================================================== */
+/**
+   * Remove the margin on controls in Safari.
+   */
+/* line 264, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+   * 1. Show the overflow in IE.
+   * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+   */
+/* line 275, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+button {
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+  /* 2 */
+}
+
+/**
+   * Correct the inability to style buttons in iOS and Safari.
+   */
+/* line 284, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+   * 1. Change the inconsistent appearance in all browsers (opinionated).
+   * 2. Correct the padding in Firefox.
+   */
+/* line 296, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+fieldset {
+  border: 1px solid #a0a0a0;
+  /* 1 */
+  padding: 0.35em 0.75em 0.625em;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in Edge 18- and IE.
+   */
+/* line 305, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+input {
+  overflow: visible;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge 18- and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   */
+/* line 314, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * 1. Add the correct display in Edge 18- and IE.
+   * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+   */
+/* line 326, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+   * Remove the inheritance of text transform in Firefox.
+   */
+/* line 335, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+select {
+  text-transform: none;
+}
+
+/**
+   * 1. Remove the margin in Firefox and Safari.
+   * 2. Remove the default vertical scrollbar in IE.
+   * 3. Change the resize direction in all browsers (opinionated).
+   */
+/* line 345, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+textarea {
+  margin: 0;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+  /* 3 */
+}
+
+/**
+   * Remove the padding in IE 10-.
+   */
+/* line 355, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[type='checkbox'],
+[type='radio'] {
+  padding: 0;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 365, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Safari.
+   */
+/* line 374, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * Correct the text style of placeholders in Chrome, Edge, and Safari.
+   */
+/* line 383, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+   * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+   */
+/* line 392, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style upload buttons in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 401, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+   * Remove the inner border and padding of focus outlines in Firefox.
+   */
+/* line 410, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus outline styles unset by the previous rule in Firefox.
+   */
+/* line 419, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Remove the additional :invalid styles in Firefox.
+   */
+/* line 427, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Interactive
+   * ========================================================================== */
+/*
+   * Add the correct display in Edge 18- and IE.
+   */
+/* line 438, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct styles in Edge 18-, IE, and Safari.
+   */
+/* line 446, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+/* line 464, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 472, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   * ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+/* line 483, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+   * Add the correct display in IE.
+   */
+/* line 491, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+template {
+  display: none;
+}
+
+/* User interaction
+   * ========================================================================== */
+/*
+   * 1. Remove the tapping delay in IE 10.
+   * 2. Remove the tapping delay on clickable elements
+        in all browsers (opinionated).
+   */
+/* line 504, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+  /* 2 */
+}
+
+/**
+   * Add the correct display in IE 10-.
+   */
+/* line 521, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+   * ========================================================================== */
+/**
+   * Change the cursor on busy elements in all browsers (opinionated).
+   */
+/* line 532, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+/*
+   * Change the cursor on control elements in all browsers (opinionated).
+   */
+/* line 540, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+   * Change the cursor on disabled, not-editable, or otherwise
+   * inoperable elements in all browsers (opinionated).
+   */
+/* line 549, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[aria-disabled='true'],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+   * Change the display on visually hidden accessible elements
+   * in all browsers (opinionated).
+   */
+/* line 559, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[aria-hidden='false'][hidden] {
+  display: initial;
+}
+
+/* line 563, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_sanitize.scss */
+[aria-hidden='false'][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+/**
+ * Use the default user interface font in all browsers (opinionated).
+ */
+/* line 5, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_typography.scss */
+html {
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/**
+   * Use the default monospace user interface font in all browsers (opinionated).
+   */
+/* line 17, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_typography.scss */
+code,
+kbd,
+samp,
+pre {
+  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/**
+ * font overrides as specified in variables
+ */
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 12, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+main {
+  color: white;
+  background-color: #13181b;
+}
+
+/* line 15, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+footer {
+  color: #6f7982;
+  background-color: #2b2e35;
+  font-size: 110px;
+  font-size: 11rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* line 22, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+header {
+  color: white;
+  background-color: #13181b;
+  border-bottom: 2px dashed #2b2e35;
+}
+
+/* line 26, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+nav {
+  color: #6f7982;
+  background-color: #2b2e35;
+  text-align: center;
+  box-shadow: 0 -10px 10px -10px #010101;
+}
+
+/* ============================================= */
+/* Component Imports                             */
+/* ============================================= */
+/* ============================================= */
+/* Page Grid Layout                              */
+/* ============================================= */
+/* line 5, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  grid-template-rows: 1fr;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas: 'header' 'main' 'nav' 'footer';
+}
+
+/* line 26, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+nav {
+  grid-area: nav;
+}
+
+/* line 29, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+header {
+  grid-area: header;
+}
+
+/* line 33, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(0px, 1fr));
+}
+
+/* line 38, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+main > section {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 44, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_layout.scss */
+footer {
+  grid-area: footer;
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_header.scss */
+.title-container {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_footer.scss */
+nav {
+  padding-top: 1rem;
+}
+
+/* line 4, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_footer.scss */
+nav a,
+nav a nav a:link,
+nav a:visited,
+nav a:active,
+nav {
+  text-decoration: none;
+  color: #6f7982;
+}
+
+/* line 13, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_footer.scss */
+nav a:hover {
+  text-decoration: none;
+  color: #b3b9be;
+}
+
+/* line 18, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_footer.scss */
+footer p {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+.main-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+  .main-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+    max-width: none;
+    align-items: stretch;
+  }
+}
+
+/* line 15, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+.main-section-container .article {
+  width: 100%;
+  height: auto;
+}
+
+/* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+.main-section-container > :nth-child(2n) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+  .main-section-container > :nth-child(2n) {
+    margin-bottom: auto;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+.main-section-container > :nth-child(2n + 1) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+  .main-section-container > :nth-child(2n + 1) {
+    margin-bottom: auto;
+    margin-top: 3rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* line 54, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
+.main-section-container img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_media-query.scss */
+.tablet-up {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_media-query.scss */
+  .tablet-up {
+    display: block;
+  }
+}
+
+/* line 9, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_media-query.scss */
+.mobile-only {
+  display: block;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 9, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_media-query.scss */
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.main-svg {
+  transform-origin: 50% 50%;
+  display: inline-block;
+  animation: none;
+  stroke-opacity: 0;
+}
+
+/* line 7, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.main-svg:hover {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation-play-state: running;
+}
+
+/* line 12, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.main-svg circle {
+  fill: #2b2e35;
+  stroke: white;
+  stroke-width: 5;
+}
+
+/* line 17, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.main-svg path {
+  fill: white;
+}
+
+/* line 21, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.resume-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, wiggle 2s 1.5s ease-in-out forwards;
+}
+
+/* line 25, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.resume-svg circle {
+  fill: #df434b;
+}
+
+/* line 28, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.projects-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, spin 2s 1.5s linear infinite;
+}
+
+/* line 32, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.projects-svg circle {
+  fill: #59c07a;
+}
+
+/* line 35, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.github-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, fades 2s 1.5s ease-in-out infinite;
+}
+
+/* line 39, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.linkedin-svg:hover,
+.linkedin-svg:hover circle {
+  animation: cir-outline 2s 0.1s linear forwards, fadecolor 1s 1s linear forwards;
+}
+
+/* line 43, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_svg.scss */
+.linkedin-svg circle {
+  fill: #0e76a8;
+}
+
+/*-- Animation sets ---*/
+@keyframes fadecolor {
+  0% {
+  }
+  100% {
+    fill: black;
+  }
+}
+
+@keyframes fades {
+  0% {
+    fill-opacity: 1;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cir-outline {
+  60% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  10% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ----------------- */
+
+/*# sourceMappingURL=styles.css.map */

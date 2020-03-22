@@ -1,0 +1,29 @@
+/* Configuration Variables */
+
+$font-body: 'sofia-pro', sans-serif;
+$font-head: 'sofia-pro', sans-serif;
+$font-code: 'attribute-mono', monospace;
+$font-size: 20px;
+
+$footer-style: (
+  'font-color': #6f7982,
+  'background-color': #2b2e35
+);
+
+$nav-style: (
+  'font-color': #6f7982,
+  'background-color': #2b2e35
+);
+
+$main-style: (
+  'article-bg': #2b2e35,
+  'background-color': #13181b,
+  'font-color': white
+);
+
+$header-style: (
+  'background-color': #13181b,
+  'border-color': #2b2e35,
+  'font-color': white
+);
+$max-page-width: 1200px;
