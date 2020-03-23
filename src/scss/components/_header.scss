@@ -3,3 +3,17 @@
   max-width: $max-page-width;
   @include push--auto;
 }
+
+header a,
+header a nav a:link,
+header a:visited,
+header a:active,
+header {
+  text-decoration: none;
+  color: map-get($header-style, 'font-color');
+}
+
+header a:hover {
+  text-decoration: none;
+  color: lighten(map-get($header-style, 'font-color'), 25%);
+}

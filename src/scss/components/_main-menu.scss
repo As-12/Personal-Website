@@ -1,4 +1,4 @@
-.main-section-container {
+.main-mainu {
   @include flex-col {
     max-width: 300px;
   }
@@ -12,12 +12,12 @@
     }
   }
 }
-.main-section-container .article {
+.svg-container {
   width: 100%;
   height: auto;
 }
 
-.main-section-container > :nth-child(2n) {
+.main-mainu > :nth-child(2n) {
   margin: {
     top: 1rem;
     bottom: 1rem;
@@ -34,7 +34,7 @@
     }
   }
 }
-.main-section-container > :nth-child(2n + 1) {
+.main-mainu > :nth-child(2n + 1) {
   margin: {
     top: 1rem;
     bottom: 1rem;
@@ -50,8 +50,4 @@
       left: 0;
     }
   }
-}
-.main-section-container img {
-  max-width: 20px;
-  max-height: 20px;
 }

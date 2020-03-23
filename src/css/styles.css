@@ -666,6 +666,136 @@ nav {
   box-shadow: 0 -10px 10px -10px #010101;
 }
 
+/* line 32, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+button {
+  color: white;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin: 1em 1em 1em 0;
+  padding: 2em 4em;
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 32, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+  button {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 2em 4em;
+    font-size: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1248px) {
+  /* line 32, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+  button {
+    padding: 1.2em 2.4em;
+    margin: 0.25em 0.25em 0.25em 0;
+    font-size: 7px;
+    font-size: 0.7rem;
+  }
+}
+
+/* line 61, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 65, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-black {
+  background-color: #25292e;
+  color: white;
+}
+
+/* line 69, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-black:hover {
+  background-color: #3c424a;
+}
+
+/* line 74, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-gray {
+  background-color: #474e55;
+  color: #b4becc;
+}
+
+/* line 77, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-gray:hover {
+  background-color: #5e6871;
+}
+
+/* line 82, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-yellow {
+  background-color: #f8cc51;
+  color: #13181a;
+}
+
+/* line 85, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-yellow:hover {
+  background-color: #fada82;
+}
+
+/* line 90, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-green {
+  background-color: #9cc355;
+  color: white;
+}
+
+/* line 93, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-green:hover {
+  background-color: #b2d07b;
+}
+
+/* line 98, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-pink {
+  background-color: #e762ba;
+  color: #313243;
+}
+
+/* line 101, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-pink:hover {
+  background-color: #ee8ecd;
+}
+
+/* line 106, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-lightblue {
+  background-color: #baebf2;
+  color: #313243;
+}
+
+/* line 109, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-lightblue:hover {
+  background-color: #e5f7fa;
+}
+
+/* line 114, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-red {
+  color: white;
+  background-color: #ec4c64;
+}
+
+/* line 117, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+.btn-red:hover {
+  background-color: #f17a8c;
+}
+
+/* line 122, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/base/_default.scss */
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
 /* ============================================= */
 /* Component Imports                             */
 /* ============================================= */
@@ -721,6 +851,22 @@ footer {
   margin-right: auto;
 }
 
+/* line 7, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_header.scss */
+header a,
+header a nav a:link,
+header a:visited,
+header a:active,
+header {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 16, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_header.scss */
+header a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_footer.scss */
 nav {
   padding-top: 1rem;
@@ -748,8 +894,8 @@ footer p {
   font-size: 0.8rem;
 }
 
-/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-.main-section-container {
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+.main-mainu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -759,8 +905,8 @@ footer p {
 }
 
 @media only screen and (min-width: 640px) {
-  /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-  .main-section-container {
+  /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+  .main-mainu {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -774,14 +920,14 @@ footer p {
   }
 }
 
-/* line 15, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-.main-section-container .article {
+/* line 15, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+.svg-container {
   width: 100%;
   height: auto;
 }
 
-/* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-.main-section-container > :nth-child(2n) {
+/* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+.main-mainu > :nth-child(2n) {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 5rem;
@@ -789,8 +935,8 @@ footer p {
 }
 
 @media only screen and (min-width: 640px) {
-  /* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-  .main-section-container > :nth-child(2n) {
+  /* line 20, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+  .main-mainu > :nth-child(2n) {
     margin-bottom: auto;
     margin-top: 1rem;
     margin-right: 0;
@@ -798,8 +944,8 @@ footer p {
   }
 }
 
-/* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-.main-section-container > :nth-child(2n + 1) {
+/* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+.main-mainu > :nth-child(2n + 1) {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -807,19 +953,13 @@ footer p {
 }
 
 @media only screen and (min-width: 640px) {
-  /* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-  .main-section-container > :nth-child(2n + 1) {
+  /* line 37, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main-menu.scss */
+  .main-mainu > :nth-child(2n + 1) {
     margin-bottom: auto;
     margin-top: 3rem;
     margin-right: 0;
     margin-left: 0;
   }
-}
-
-/* line 54, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_main.scss */
-.main-section-container img {
-  max-width: 20px;
-  max-height: 20px;
 }
 
 /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_media-query.scss */
@@ -968,5 +1108,268 @@ footer p {
 }
 
 /* ----------------- */
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-card {
+  background-color: #2b2e35;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+/* line 14, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-content {
+  margin-left: 1rem;
+}
+
+/* line 18, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-content h5 {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/* line 21, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 21, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .project-image {
+    max-width: 250px;
+    border-radius: 0.5rem;
+  }
+}
+
+/* line 29, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-content p {
+  color: #b4becc;
+}
+
+/* line 32, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-continer {
+  margin-bottom: 1rem;
+}
+
+/* line 36, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-continer h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* line 39, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-images:hover {
+  cursor: pointer;
+}
+
+/* line 42, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 42, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .project-images {
+    max-width: 250px;
+  }
+}
+
+/* line 50, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-images > :nth-child(n) {
+  display: none;
+}
+
+@media only screen and (min-width: 1248px) {
+  /* line 50, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .project-images > :nth-child(n) {
+    display: inline;
+  }
+}
+
+/* line 56, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.project-images > :last-child {
+  display: inline;
+}
+
+@media only screen and (min-width: 1248px) {
+  /* line 56, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .project-images > :last-child {
+    display: none;
+  }
+}
+
+/* line 63, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 1248px) {
+  /* line 67, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .dt-inline {
+    display: inline !important;
+  }
+}
+
+@media only screen and (min-width: 1248px) {
+  /* line 72, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  .dt-hide {
+    display: none !important;
+  }
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container {
+  margin-bottom: 1rem;
+}
+
+/* line 5, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container h4 {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 5, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+  .resume-container h4 {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+/* line 12, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container p {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 12, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+  .resume-container p {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+/* line 19, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container strong {
+  color: #d2d8e1;
+}
+
+/* line 22, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container p {
+  color: #b4becc;
+}
+
+/* line 26, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container a,
+.resume-container a:link,
+.resume-container a:visited,
+.resume-container a:active {
+  text-decoration: none;
+  color: #4974c8;
+}
+
+/* line 34, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_resume.scss */
+.resume-container a:hover {
+  text-decoration: none;
+  color: #84a1da;
+}
+
+/* line 1, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_loader.scss */
+html {
+  background-color: black;
+}
+
+/* line 4, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_loader.scss */
+body {
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  /* line 51, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_loader.scss */
+  0% {
+    opacity: 0;
+  }
+  /* line 54, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_loader.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

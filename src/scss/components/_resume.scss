@@ -1,0 +1,37 @@
+.resume-container {
+  margin-bottom: 1rem;
+}
+
+.resume-container h4 {
+  @include font-size(1.1);
+  @include mq('tablet-small') {
+    @include font-size(1.4);
+  }
+}
+
+.resume-container p {
+  @include font-size(1);
+  @include mq('tablet-small') {
+    @include font-size(1.2);
+  }
+}
+
+.resume-container strong {
+  color: lighten(#b4becc, 10%);
+}
+.resume-container p {
+  color: #b4becc;
+}
+
+.resume-container a,
+.resume-container a:link,
+.resume-container a:visited,
+.resume-container a:active {
+  text-decoration: none;
+  color: #4974c8;
+}
+
+.resume-container a:hover {
+  text-decoration: none;
+  color: lighten(#4974c8, 15%);
+}
