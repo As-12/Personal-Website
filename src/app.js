@@ -68,6 +68,7 @@ function filterProject(searchString) {
 }
 
 // Add event to filter buttons
+let mobile = window.matchMedia('(min-width: 640px)');
 
 const filters = document.querySelector('.project-filter');
 const filterButtons = filters.querySelectorAll('button');
@@ -77,6 +78,9 @@ for (let i = 0; i != filterButtons.length; i += 1) {
       filterProject('');
     } else {
       filterProject(filterButtons[i].value);
+    }
+    if (!mobile.matches) {
+      document.getElementById('projects').scrollIntoView();
     }
   });
 }
