@@ -1,6 +1,6 @@
 .main-mainu {
   @include flex-col {
-    max-width: 300px;
+    max-width: 150px;
   }
   @include mq('tablet-small') {
     @include flex-row {
