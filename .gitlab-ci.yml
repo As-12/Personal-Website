@@ -10,7 +10,7 @@ cache:
 firebase deploy:
   stage: deploy
   script:
-    - cd functions
+    - chmod +x build.sh
     - npm install
     - npm run build
     - firebase deploy --token "$FIREBASE_TOKEN"
