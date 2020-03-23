@@ -1,0 +1,19 @@
+image: node:12.13.0-alpine
+
+stages:
+  - deploy
+
+# Each branch share the same cache
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+
+firebase deploy:
+  stage: deploy
+  script:
+    - cd functions
+    - npm install
+    - npm run build
+    - firebase deploy --token "$FIREBASE_TOKEN"
+  only:
+    refs:
+      - master

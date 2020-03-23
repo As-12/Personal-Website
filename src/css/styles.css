@@ -904,7 +904,7 @@ footer p {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  max-width: 300px;
+  max-width: 150px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -1193,47 +1193,48 @@ footer p {
   /* line 42, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
   .project-images {
     max-width: 250px;
+    height: auto;
   }
 }
 
-/* line 50, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+/* line 51, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
 .project-images > :nth-child(n) {
   display: none;
 }
 
 @media only screen and (min-width: 1248px) {
-  /* line 50, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  /* line 51, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
   .project-images > :nth-child(n) {
     display: inline;
   }
 }
 
-/* line 56, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+/* line 57, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
 .project-images > :last-child {
   display: inline;
 }
 
 @media only screen and (min-width: 1248px) {
-  /* line 56, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  /* line 57, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
   .project-images > :last-child {
     display: none;
   }
 }
 
-/* line 63, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+/* line 64, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
 .hide {
   display: none;
 }
 
 @media only screen and (min-width: 1248px) {
-  /* line 67, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  /* line 68, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
   .dt-inline {
     display: inline !important;
   }
 }
 
 @media only screen and (min-width: 1248px) {
-  /* line 72, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
+  /* line 73, ../../../../../Users/thanaphonchavengsaksongkram/Projects/Personal-Website/src/scss/components/_projects.scss */
   .dt-hide {
     display: none !important;
   }
