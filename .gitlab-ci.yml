@@ -9,6 +9,8 @@ cache:
 
 firebase deploy:
   stage: deploy
+  before_script:
+    - npm i -g firebase-tools
   script:
     - chmod +x build.sh
     - npm install

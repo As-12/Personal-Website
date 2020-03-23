@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -r dist
+rm -rf dist
 mkdir dist
 cp -r ./src/css ./dist
 cp ./src/*.html ./dist
