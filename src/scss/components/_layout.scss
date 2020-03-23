@@ -1,0 +1,46 @@
+/* ============================================= */
+/* Page Grid Layout                              */
+/* ============================================= */
+
+.grid-container {
+  @include grid-col {
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: 'header' 'main' 'nav' 'footer';
+  }
+  @include mq('phone-wide') {
+  }
+  @include mq('phablet') {
+  }
+  @include mq('tablet-small') {
+  }
+  @include mq('tablet') {
+  }
+  @include mq('tablet-wide') {
+  }
+  @include mq('desktop') {
+  }
+  @include mq('desktop-wide') {
+  }
+}
+nav {
+  grid-area: nav;
+}
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  @include grid-row;
+}
+
+main > section {
+  width: 80%;
+  max-width: $max-page-width;
+  @include push--auto;
+}
+
+footer {
+  grid-area: footer;
+}

@@ -1,0 +1,103 @@
+.main-svg {
+  transform-origin: 50% 50%;
+  display: inline-block;
+  animation: none;
+  stroke-opacity: 0;
+}
+.main-svg:hover {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation-play-state: running;
+}
+.main-svg circle {
+  fill: map-get($main-style, 'article-bg');
+  stroke: white;
+  stroke-width: 5;
+}
+.main-svg path {
+  fill: white;
+}
+
+.resume-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, wiggle 2s 1.5s ease-in-out forwards;
+}
+
+.resume-svg circle {
+  fill: #df434b;
+}
+.projects-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, spin 2s 1.5s linear infinite;
+}
+
+.projects-svg circle {
+  fill: #59c07a;
+}
+.github-svg:hover {
+  animation: cir-outline 2s 0.1s linear forwards, fades 2s 1.5s ease-in-out infinite;
+}
+
+.linkedin-svg:hover,
+.linkedin-svg:hover circle {
+  animation: cir-outline 2s 0.1s linear forwards, fadecolor 1s 1s linear forwards;
+}
+.linkedin-svg circle {
+  fill: #0e76a8;
+}
+/*-- Animation sets ---*/
+@keyframes fadecolor {
+  0% {
+  }
+  100% {
+    fill: black;
+  }
+}
+@keyframes fades {
+  0% {
+    fill-opacity: 1;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill-opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cir-outline {
+  60% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  10% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ----------------- */

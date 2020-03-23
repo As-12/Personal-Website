@@ -1,0 +1,128 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  @include apply-theme($main-style);
+}
+footer {
+  @include apply-theme($footer-style);
+  @include font-size(11);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+header {
+  @include apply-theme($header-style);
+}
+
+nav {
+  @include apply-theme($nav-style);
+  text-align: center;
+  box-shadow: 0 -10px 10px -10px #010101;
+}
+
+button {
+  color: white;
+
+  border: 2px solid transparent;
+
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin: 1em 1em 1em 0;
+  padding: 2em 4em;
+  @include font-size(1);
+
+  @include mq('tablet-small') {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 2em 4em;
+    @include font-size(0.8);
+  }
+  @include mq('desktop') {
+    padding: 1.2em 2.4em;
+    margin: 0.25em 0.25em 0.25em 0;
+    @include font-size(0.7);
+  }
+}
+button:focus {
+  outline: 0;
+}
+
+.btn-black {
+  background-color: #25292e;
+  color: white;
+
+  &:hover {
+    background-color: lighten($color: #25292e, $amount: 10%);
+  }
+}
+
+.btn-gray {
+  background-color: #474e55;
+  color: #b4becc;
+  &:hover {
+    background-color: lighten($color: #474e55, $amount: 10%);
+  }
+}
+
+.btn-yellow {
+  background-color: #f8cc51;
+  color: #13181a;
+  &:hover {
+    background-color: lighten($color: #f8cc51, $amount: 10%);
+  }
+}
+
+.btn-green {
+  background-color: #9cc355;
+  color: white;
+  &:hover {
+    background-color: lighten($color: #9cc355, $amount: 10%);
+  }
+}
+
+.btn-pink {
+  background-color: #e762ba;
+  color: #313243;
+  &:hover {
+    background-color: lighten($color: #e762ba, $amount: 10%);
+  }
+}
+
+.btn-lightblue {
+  background-color: #baebf2;
+  color: #313243;
+  &:hover {
+    background-color: lighten($color: #baebf2, $amount: 10%);
+  }
+}
+
+.btn-red {
+  color: white;
+  background-color: #ec4c64;
+  &:hover {
+    background-color: lighten($color: #ec4c64, $amount: 10%);
+  }
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}

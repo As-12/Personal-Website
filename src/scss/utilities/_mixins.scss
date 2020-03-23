@@ -1,0 +1,136 @@
+// Convert fontsize to REM with px fallback
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// Center a block
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+// Push block left side
+@mixin push--left {
+  margin-right: auto;
+  @content;
+}
+// Push block right side
+@mixin push--right {
+  margin-left: auto;
+  @content;
+}
+
+// pesudo
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// maintain aspect ratio for responsiveness
+@mixin responsive-ratio($x, $y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + '%');
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
+}
+
+// styling all placeholder text
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// media queries
+$breakpoints: (
+  'phone': 400px,
+  'phone-wide': 480px,
+  'phablet': 560px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'desktop': 1248px,
+  'desktop-wide': 1440px
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+//--- Flex mixins ---
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  @content;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  @content;
+}
+
+//--- grid mixins ---*/
+@mixin grid-col($minSize: 0px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($minSize, 1fr));
+  grid-template-rows: 1fr;
+
+  @content;
+}
+
+@mixin grid-row($minSize: 0px) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax($minSize, 1fr));
+  @content;
+}
+
+// Styling Mixins
+
+@mixin apply-theme($theme) {
+  @if map-has-key($theme, 'font-color') {
+    color: map_get($theme, 'font-color');
+  }
+  @if map-has-key($theme, 'background-color') {
+    background-color: map_get($theme, 'background-color');
+  }
+  @if map-has-key($theme, 'border-color') {
+    border-bottom: 2px dashed map_get($theme, 'border-color');
+  }
+
+  @content;
+}

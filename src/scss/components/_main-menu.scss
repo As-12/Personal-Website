@@ -1,0 +1,53 @@
+.main-mainu {
+  @include flex-col {
+    max-width: 300px;
+  }
+  @include mq('tablet-small') {
+    @include flex-row {
+      margin-top: auto;
+      margin-bottom: auto;
+      justify-content: space-evenly;
+      max-width: none;
+      align-items: stretch;
+    }
+  }
+}
+.svg-container {
+  width: 100%;
+  height: auto;
+}
+
+.main-mainu > :nth-child(2n) {
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+    left: 5rem;
+    right: auto;
+  }
+
+  @include mq('tablet-small') {
+    margin: {
+      bottom: auto;
+      top: 1rem;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+.main-mainu > :nth-child(2n + 1) {
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+    left: auto;
+    right: 5rem;
+  }
+
+  @include mq('tablet-small') {
+    margin: {
+      bottom: auto;
+      top: 3rem;
+      right: 0;
+      left: 0;
+    }
+  }
+}
