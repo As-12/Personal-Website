@@ -5,6 +5,7 @@
 ## Overview
 
 This is a repository for my personal web project. It is built in pure HTML5 and CSS3 with minimal Javascript.
+Layout is created using CSS flex and grid. CSS is managed by SASS.
 
 [Live Website](https://thanaphon.dev/)
 
