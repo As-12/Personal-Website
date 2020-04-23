@@ -1,6 +1,5 @@
 # Personal-Website
 
-[![pipeline status](https://gitlab.com/As-12/Personal-Website/badges/master/pipeline.svg)](https://gitlab.com/As-12/Personal-Website/-/commits/master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
